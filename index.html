@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="smooth-scroll bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-xl font-bold text-blue-500">Portfolio</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2">About</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700 hover:text-blue-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md">About</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md">Projects</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-500 hover:bg-gray-100 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">Hi, I'm <span class="text-blue-500">Umesh keshari</span></h1>
+                    <h2 class="text-2xl md:text-3xl text-gray-600 mb-6">Web Developer</h2>
+                    <p class="text-gray-600 mb-8 max-w-lg">I create beautiful, responsive websites with modern technologies. Let's build something amazing together!</p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition duration-300">View My Work</a>
+                        <a href="#contact" class="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg transition duration-300">Contact Me</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center fade-in delay-1">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 bg-blue-500 rounded-full absolute -z-10 top-4 left-4"></div>
+                        <img src="https://i.postimg.cc/WbkzdkTj/IMG-0156.jpg" alt="Profile Picture" class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16 fade-in">About <span class="text-blue-500">Me</span></h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center fade-in">
+                    <img src="https://i.postimg.cc/WbkzdkTj/IMG-0156.jpg" alt="About Me" class="w-64 h-64 object-cover rounded-full border-4 border-blue-500 shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-12 fade-in delay-1">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Who am I?</h3>
+                    <p class="text-gray-600 mb-6">I'm a passionate Web developer with 1 years of experience creating modern, responsive websites and web applications. I specialize in HTML, CSS, JavaScript.</p>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">My Skills</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Git</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Responsive Design</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">Experience</h4>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-500 pl-4 py-1">
+                                <h5 class="font-medium text-gray-800">Web Developer at TechCorp</h5>
+                                <p class="text-gray-600 text-sm">2024 - Present</p>
+                                <p class="text-gray-600 mt-1">Developed and maintained multiple web applications using HTML,CSS,and javascript.</p>
+                            </div>
+                            <div class="border-l-4 border-blue-500 pl-4 py-1">
+                                <h5 class="font-medium text-gray-800">Web Designer at DesignStudio</h5>
+                                <p class="text-gray-600 text-sm">2024 - 2025</p>
+                                <p class="text-gray-600 mt-1">Created responsive website designs and implemented them with HTML/CSS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4 fade-in">My <span class="text-blue-500">Projects</span></h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12 fade-in delay-1">Here are some of my recent projects. Each one was built with care and attention to detail.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover fade-in delay-1">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">E-commerce Website</h3>
+                        <p class="text-gray-600 mb-4">A fully responsive e-commerce platform built with HTML,CSS and javascript</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">HTML</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">CSS</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">JavaScript</span>
+                        </div>
+                        <a href="#" class="text-blue-500 hover:text-blue-600 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover fade-in delay-2">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Portfolio Template</h3>
+                        <p class="text-gray-600 mb-4">A clean, modern portfolio template built with HTML, CSS, and JavaScript.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">HTML</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">CSS</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">JavaScript</span>
+                        </div>
+                        <a href="#" class="text-blue-500 hover:text-blue-600 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover fade-in delay-3">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1436&q=80" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">A productivity app for managing tasks and projects with drag-and-drop functionality.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">HTML</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">CSS</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">javascript</span>
+                        </div>
+                        <a href="#" class="text-blue-500 hover:text-blue-600 font-medium">View Project →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover fade-in delay-3">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1436&q=80" alt="Project 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Blog Platform</h3>
+                        <p class="text-gray-600 mb-4">A full-stack blog platform with user authentication and rich text editing.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">HTML</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">CSS</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">JavaScript</span>
+                        </div>
+                        <a href="#" class="text-blue-500 hover:text-blue-600 font-medium">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4 fade-in">Get In <span class="text-blue-500">Touch</span></h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12 fade-in delay-1">Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2 fade-in">
+                    <div id="success-message" class="success-message">
+                        Thank you for your message! I'll get back to you soon.
+                    </div>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Your Name *</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <div id="name-error" class="error-message">Please enter your name</div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Your Email *</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <div id="email-error" class="error-message">Please enter a valid email address</div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 mb-2">Subject *</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <div id="subject-error" class="error-message">Please enter a subject</div>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
+                            <div id="message-error" class="error-message">Please enter your message</div>
+                        </div>
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition duration-300 w-full flex items-center justify-center">
+                            <span id="submit-text">Send Message</span>
+                            <svg id="submit-spinner" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2 fade-in delay-1">
+                    <div class="bg-gray-50 p-8 rounded-xl h-full">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full text-blue-500">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-gray-800 font-medium">Location</h4>
+                                    <p class="text-gray-600">Birgunj,Nepal</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full text-blue-500">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-gray-800 font-medium">Email</h4>
+                                    <p class="text-gray-600">keshariaakash34@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full text-blue-500">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-gray-800 font-medium">Phone</h4>
+                                    <p class="text-gray-600">+977 98********</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full text-blue-500">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-gray-800 font-medium">Working Hours</h4>
+                                    <p class="text-gray-600">sun-Fri: 9AM - 5PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://wa.me/9779825237064" class="bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white p-3 rounded-full transition duration-300">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="https://t.me/hancy_aakash" class="bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white p-3 rounded-full transition duration-300">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/share/1AY2FaekRZ/?mibextid=wwXIfr" class="bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white p-3 rounded-full transition duration-300">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/hancy_aakash4?igsh=MWVzOWRoYWJwcmRvMg%3D%3D&utm_source=qr" class="bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white p-3 rounded-full transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#home" class="text-xl font-bold text-white">Portfolio</a>
+                    <p class="text-gray-400 mt-2">© 2023 My Portfolio. All rights reserved.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
